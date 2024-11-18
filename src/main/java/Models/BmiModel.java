@@ -2,23 +2,20 @@ package Models;
 
 public class BmiModel {
 
-    private PersonModel person;
+    //private static PersonModel person;
 
-    public BmiModel(PersonModel person){
-        this.person = person;
-       
-    }
+   
+    public static double calculateBMI(double  weight, double height){
+        //double weight = person.getWeight();
+       // double height = person.getHeight();
 
-    public double calculateBMI(){
-        double weight = person.getWeight();
-        double height = person.getHeight();
-
-       double bmi =weight / (Math.pow(height,2));   
+       double bmi = weight / (Math.pow(height,2));   
+       System.out.println(bmi);
        return bmi;
 
     }
 
-    public String giveResultsBMI(double bmi){
+    public static String giveResultsBMI(double bmi){
         if (bmi < 16){
             return "Severe thinness";
         }else if(bmi < 17){

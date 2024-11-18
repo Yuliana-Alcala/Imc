@@ -1,5 +1,7 @@
 package dev.imc;
 
+import Controller.BmiController;
+
 /**
  * Hello world!
  */
@@ -17,5 +19,8 @@ public final class App {
         System.out.println("Welcome to BMI calculator!");
         System.out.println("--------------------------");
         System.out.println( "                          ");
+        
+        new BmiController();
+        
     }
 }
