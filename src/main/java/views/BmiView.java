@@ -17,8 +17,8 @@ public class BmiView {
     }
 
     public void ShowResults(double bmi, String clasificaString){
-        
-
+        System.out.printf("Your BMI is: %.2f\n\n",bmi);
+        System.out.println("Your BMI is: "+ clasificaString);
     }
 
 }
