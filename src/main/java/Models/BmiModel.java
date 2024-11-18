@@ -10,7 +10,7 @@ public class BmiModel {
        // double height = person.getHeight();
 
        double bmi = weight / (Math.pow(height,2));   
-       System.out.println(bmi);
+       
        return bmi;
 
     }
