@@ -1,7 +1,8 @@
 package Controller;
 
 import Models.BmiModel;
-import views.BmiView;
+import Models.PersonModel;
+import Views.BmiView;
 
 public class BmiController {
 
@@ -13,11 +14,12 @@ public class BmiController {
     public static void startProgram(){       
         double weight = BmiView.askWeight();
         double height = BmiView.askHeight();
-        getBMI(weight,height);
+        PersonModel person = new PersonModel(weight, height);
+        getBMI(person);
     }
 
-    public static void getBMI(double weight, double height){
-        double bmi = BmiModel.calculateBMI(weight,height);
+    public static void getBMI(PersonModel person){
+        double bmi = BmiModel.calculateBMI(person);
         String clasification = BmiModel.giveResultsBMI(bmi);
         BmiView.showResults(bmi, clasification);
 

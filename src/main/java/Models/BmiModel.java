@@ -2,16 +2,13 @@ package Models;
 
 public class BmiModel {
 
-    //private static PersonModel person;
+    
+  
 
-   
-    public static double calculateBMI(double  weight, double height){
-        //double weight = person.getWeight();
-       // double height = person.getHeight();
-
-       double bmi = weight / (Math.pow(height,2));   
+    public static double calculateBMI(PersonModel person){
+        double bmi = person.getWeight() / (Math.pow(person.getHeight(),2));   
        
-       return bmi;
+        return bmi;
 
     }
 

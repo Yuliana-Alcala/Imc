@@ -1,4 +1,4 @@
-package views;
+package Views;
 
 import java.util.Locale;
 import java.util.Scanner;
@@ -17,9 +17,9 @@ public class BmiView {
         return scanner.nextDouble();
     }
 
-    public static void showResults(double bmi, String clasificaString){
+    public static void showResults(double bmi, String clasification){
         System.out.printf("Your BMI is: %.2f\n\n", bmi);
-        System.out.println("Your BMI is: "+ clasificaString);
+        System.out.println("Your BMI is: "+ clasification);
     }
 
 }

@@ -2,8 +2,8 @@ package Models;
 
 public class PersonModel {
 
-    public double weight;
-    public double height;
+    private double weight;
+    private double height;
 
 
     public double getWeight() {
